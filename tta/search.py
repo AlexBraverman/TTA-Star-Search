@@ -19,7 +19,7 @@ class TTAStar:
     def __init__(
         self,
         model: LLMWrapper,
-        max_iter: int = 4,
+        max_iter: int = 8,
         g_weight: float = 1.0,
         num_children: int = 2,
         num_reward_evals: int = 3,
