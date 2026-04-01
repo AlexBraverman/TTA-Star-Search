@@ -1,6 +1,6 @@
 # TTA*: Test-Time A* Search
 
-Clean re-implementation of **TTA\*** from the paper
+**TTA\*** from the paper
 *"Test-Time A* Search for Multistep Reasoning in Small Language Models"*
 
 TTA* improves LLM reasoning at inference time by framing multi-step problem solving as a goal-directed tree search — no fine-tuning, no external reward models.
