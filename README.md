@@ -16,12 +16,11 @@ f(n) = g(n) + h(n)
      = w · depth(n) + (100 − Reward(n))
 ```
 
-- **g(n)**: path cost (penalises deep, long-winded reasoning chains)
-- **h(n)**: heuristic (estimated remaining "distance" to a correct solution)
-- **Reward(n)**: median of multiple self-evaluations — averaging reduces noise from unreliable SLM critiques
+- **g(n)**: path cost 
+- **h(n)**: heuristic 
+- **Reward(n)**: median of multiple self-evaluations 
 
-At each step the node with the **lowest f** is expanded: the model critiques its own answer and generates `num_children` refined candidates. This balances exploration (low h, promising answers) with exploitation (low g, shallow paths).
-
+At each step, the node with the **lowest f** is expanded: the model critiques its own answer and generates `num_children` refined candidates.
 ---
 
 ## Quick start
@@ -71,5 +70,5 @@ results/        # Output JSONs (gitignored)
 
 ## Datasets
 
-- **GSM8K**: `gsm8k` on HuggingFace Datasets
-- **MATH500 / MATH401 / AIME**: coming soon
+- **GSM8K / MATH500 / AIME (2024)**: Available on HuggingFace Datasets
+- **MATH401**: (https://github.com/GanjinZero/math401-llm)
